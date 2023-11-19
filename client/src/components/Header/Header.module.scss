@@ -1,0 +1,81 @@
+.containerTop {
+  width: 100%;
+  background-color: #474747;
+
+  .wrapperTop {
+    padding: 11px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1293px;
+
+    .contacts {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .contactInfo {
+          color: #f9f9f7;
+          font: 400 16px DM Sans;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .socialLogos {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+.containerBottom {
+  width: 100%;
+  background-color: #f9f9f7;
+
+  .wrapperBottom {
+    padding: 29px 20px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1293px;
+
+    .logoWrapper {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      .siteTitle {
+        color: #474747;
+
+        font: 600 42.667px Playfair Display;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 29.333px;
+        letter-spacing: -0.4px;
+      }
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+
+      .btnNav {
+        border-radius: 34px;
+        background-color: #dbdfd0;
+        color: #2c2f24;
+        font: 500 16px DM Sans;
+        line-height: 24px;
+        text-align: center;
+        padding: 4px 0;
+        width: 77px;
+      }
+    }
+  }
+}
