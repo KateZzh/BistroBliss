@@ -1,0 +1,100 @@
+.container {
+  background-color: #474747;
+  width: 100%;
+
+  .wrapper {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 120px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .wrapperLeft {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 293px;
+      width: 100%;
+
+      .logoWrapper {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        .siteTitle {
+          color: #fff;
+          font: 600 32.67px Playfair Display;
+          font-style: italic;
+          line-height: 29.333px;
+          letter-spacing: -0.4px;
+        }
+      }
+
+      .description {
+        color: #adb29e;
+        font: 400 16px DM Sans;
+        line-height: 24px;
+      }
+    }
+
+    .wrapperCentre {
+      display: flex;
+      justify-content: space-between;
+      max-width: 330px;
+      width: 100%;
+
+      .pagesOrUtilityWrapper {
+        h3 {
+          color: #fff;
+          font: 700 16px DM Sans;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
+
+        .titlePage {
+          color: #dbdfd0;
+          font: 400 16px DM Sans;
+          line-height: 24px;
+          padding-top: 20px;
+        }
+      }
+    }
+
+    .wrapperRight {
+      max-width: 403px;
+
+      .linkToInstagram {
+        color: #fff;
+        font: 700 16px DM Sans;
+        line-height: 24px;
+        padding-bottom: 40px;
+      }
+
+      .imagesFromInstagram {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .img {
+          border-radius: 12px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .line {
+    background-color: #414536;
+    height: 1px;
+  }
+  .creatorInfo {
+    color: #adb29e;
+    font: 400 16px DM Sans;
+    font-family: DM Sans;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px 0 85px;
+  }
+}

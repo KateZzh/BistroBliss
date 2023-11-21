@@ -3,11 +3,11 @@
   background-color: #474747;
 
   .wrapperTop {
-    padding: 11px 20px;
+    padding: 11px 0 10px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    max-width: 1293px;
+    max-width: 1296px;
 
     .contacts {
       display: flex;
@@ -31,6 +31,13 @@
       display: flex;
       align-items: center;
       gap: 4px;
+
+      .icon {
+        &:hover {
+          transform: 0.5s;
+          opacity: 65%;
+        }
+      }
     }
   }
 }
@@ -40,10 +47,11 @@
   background-color: #f9f9f7;
 
   .wrapperBottom {
-    padding: 29px 20px 20px;
+    padding: 29px 0 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1293px;
 
     .logoWrapper {
@@ -53,7 +61,6 @@
 
       .siteTitle {
         color: #474747;
-
         font: 600 42.667px Playfair Display;
         font-style: italic;
         font-weight: 600;
@@ -68,13 +75,37 @@
 
       .btnNav {
         border-radius: 34px;
-        background-color: #dbdfd0;
         color: #2c2f24;
         font: 500 16px DM Sans;
         line-height: 24px;
         text-align: center;
         padding: 4px 0;
         width: 77px;
+        height: 32px;
+        background-color: #dbdfd0;
+
+        &:hover {
+          transform: 0.5s;
+          opacity: 75%;
+        }
+      }
+    }
+
+    .btn {
+      border-radius: 118px;
+      border: 1.5px solid #2c2f24;
+      padding: 12px 0;
+      width: 147px;
+      height: 48px;
+      color: #182226;
+      font: 700 16px DM Sans;
+      text-align: center;
+      line-height: 24px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dbdfd0;
+        transition: 0.5s;
       }
     }
   }

@@ -1,31 +1,41 @@
 @font-face {
   font-family: 'DM Sans';
   src: url(../../public/fonts/DMSans-Regular.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  // font-style: normal;
 }
 
 @font-face {
   font-family: 'DM Sans';
   src: url(../../public/fonts/DMSans-Medium.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: 'DM Sans';
   src: url(../../public/fonts/DMSans-Bold.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url(../../public/fonts/PlayfairDisplay-Medium.ttf),
-    url(../../public/fonts/PlayfairDisplay-Regular.ttf),
-    url(../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal, italic;
+  src: url(../../public/fonts/PlayfairDisplay-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../../public/fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(../../public/fonts/PlayfairDisplay-SemiBoldItalic.ttf) format('truetype');
+  font-weight: 600;
+  font-style: italic;
 }
 
 * {
@@ -42,11 +52,20 @@ body {
 
 body {
   background-color: #ffffff;
-
-  font-style: normal;
   font: 400 16px DM Sans;
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
 }
