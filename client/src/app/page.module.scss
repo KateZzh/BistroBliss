@@ -1,0 +1,72 @@
+.containerTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  .backgroundImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+
+  .outsideWrapperInfo {
+    margin: 0 auto;
+    max-width: 1296px;
+    padding: 207px 0 202px;
+
+    .wrapperInfo {
+      max-width: 667px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .slogan {
+        color: #2c2f24;
+        font: 400 100px Playfair Display;
+        line-height: 96px;
+        padding-bottom: 32px;
+      }
+
+      .description {
+        color: #2c2f24;
+        font: 400 20px DM Sans;
+        line-height: 32px;
+        max-width: 537px;
+        padding-bottom: 40px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 16px;
+
+        .btnPurple {
+          border-radius: 118px;
+          background: #ad343e;
+          width: 163px;
+          color: #fff;
+          text-align: center;
+          font: 700 16px DM Sans;
+          line-height: 24px;
+          padding: 20px 0;
+        }
+
+        .btnWhite {
+          border-radius: 118px;
+          border: 1.5px solid #2c2f24;
+          color: #182226;
+          text-align: center;
+          font: 700 16px DM Sans;
+          line-height: 24px;
+          padding: 20px 0;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
