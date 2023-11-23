@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <>
       <div className={style.containerTop}>
-        <Image className={style.backgroundImg} src={mainImg}></Image>
+        <Image className={style.backgroundImg} src={mainImg} alt='backgroundImg'></Image>
 
         <div className={style.outsideWrapperInfo}>
           <div className={style.wrapperInfo}>
@@ -101,7 +101,6 @@ export default function Home() {
       </div>
 
       <div className={style.containerCentre}>
-        <div className={style.wrapper}>
           <h2>Browse Our Menu</h2>
 
           <div className={style.menuCardsWrapper}>
@@ -120,13 +119,13 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
       </div>
 
       <div className={style.containerBottom}>
         <div className={style.wrapper}>
           <h2>We also offer unique services for your events</h2>
 
+          <div className={style.eventsCardsWrapper}>
           {arrEventCard.map((el, i) => (
             <div className={style.eventCard} key={i}>
               <Image className={style.imgEventCard} alt={el.alt} src={el.iconCard}></Image>
@@ -137,7 +136,7 @@ export default function Home() {
               </div>
             </div>
           ))}
-          <div className={style.eventsCardsWrapper}></div>
+          </div>
         </div>
       </div>
     </>

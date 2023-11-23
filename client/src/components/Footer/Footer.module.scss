@@ -69,6 +69,11 @@
         font: 700 16px DM Sans;
         line-height: 24px;
         padding-bottom: 40px;
+
+        &:hover {
+          text-replace: 0.5s;
+          opacity: 80%;
+        }
       }
 
       .imagesFromInstagram {

@@ -45,26 +45,146 @@
         display: flex;
         gap: 16px;
 
-        .btnPurple {
+        .btnPurple,
+        .btnWhite {
           border-radius: 118px;
-          background: #ad343e;
-          width: 163px;
-          color: #fff;
           text-align: center;
           font: 700 16px DM Sans;
           line-height: 24px;
           padding: 20px 0;
+          cursor: pointer;
+
+          &:hover {
+            transform: 0.5s;
+            opacity: 80%;
+          }
+        }
+
+        .btnPurple {
+          background: #ad343e;
+          color: #fff;
+          width: 163px;
         }
 
         .btnWhite {
-          border-radius: 118px;
           border: 1.5px solid #2c2f24;
           color: #182226;
-          text-align: center;
-          font: 700 16px DM Sans;
-          line-height: 24px;
-          padding: 20px 0;
           width: 170px;
+        }
+      }
+    }
+  }
+}
+
+.containerCentre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 92px 0 120px;
+  margin: 0 auto;
+  max-width: 1296px;
+  gap: 64px;
+
+  h2 {
+    color: #2c2f24;
+    text-align: center;
+    font: 500 55px Playfair Display;
+    line-height: 60.5px;
+  }
+
+  .menuCardsWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    .menuCard {
+      max-width: 306px;
+      border-radius: 12px;
+      border: 1.5px solid #dbdfd0;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      padding: 40px 34px 32px;
+      text-align: center;
+
+      .descriptionMenuCard {
+        h3 {
+          color: #2c2f24;
+          font: 700 24px DM Sans;
+          line-height: 30px;
+          letter-spacing: -0.72px;
+          padding-bottom: 15px;
+        }
+
+        p {
+          color: #414536;
+          font: 400 16px DM Sans;
+          line-height: 24px;
+        }
+      }
+
+      .linkToExploreMenu {
+        color: #ad343e;
+        font: 700 16px DM Sans;
+        line-height: 24px;
+
+        &:hover {
+          transition: 0.5s;
+          opacity: 70%;
+        }
+      }
+    }
+  }
+}
+
+.containerBottom {
+  background-color: #f9f9f7;
+  width: 100%;
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1296px;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+
+    h2 {
+      color: #2c2f24;
+      font: 500 55px Playfair Display;
+      line-height: 60.5px;
+      max-width: 675px;
+    }
+
+    .eventsCardsWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+
+      .eventCard {
+        .imgEventCard {
+          border-radius: 12px;
+        }
+
+        .descriptionEventCard {
+          max-width: 280px;
+
+          h3 {
+            color: #2c2f24;
+            font: 700 24px DM Sans;
+            line-height: 30px;
+            letter-spacing: -0.72px;
+            padding-top: 30px;
+          }
+
+          p {
+            color: #414536;
+            font: 400 16px DM Sans;
+            line-height: 24px;
+            padding-top: 15px;
+          }
         }
       }
     }
