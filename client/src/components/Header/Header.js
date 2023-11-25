@@ -15,7 +15,7 @@ export default function Header() {
     { icon: twitterIcon, alt: 'twitterIcon' },
     { icon: facebookIcon, alt: 'facebookIcon' },
     { icon: instagramIcon, alt: 'instagramIcon' },
-    { icon: githubIcon, alt: 'instagramIcon' },
+    { icon: githubIcon, alt: 'githubIcon' },
   ];
 
   const arrNav = [
@@ -30,12 +30,12 @@ export default function Header() {
         <div className={style.wrapperTop}>
           <div className={style.contacts}>
             {[
-              { icon: phoneIcon, alt: 'phoneIcon' },
-              { icon: mailIcon, alt: 'mailIcon' },
+              { icon: phoneIcon, alt: 'phoneIcon', contact: '(414) 857 - 0107' },
+              { icon: mailIcon, alt: 'mailIcon', contact: 'yummy@bistrobliss' },
             ].map((el, i) => (
               <div className={style.contact} key={i}>
                 <Image src={el.icon} alt={el.alt}></Image>
-                <p className={style.contactInfo}>(414) 857 - 0107</p>
+                <p className={style.contactInfo}>{el.contact}</p>
               </div>
             ))}
           </div>

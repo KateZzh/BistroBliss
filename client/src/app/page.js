@@ -13,7 +13,7 @@ import cupIcon from '../../public/cupIcon.svg';
 import glassIcon from '../../public/glassIcon.svg';
 import plateIcon from '../../public/plateIcon.svg';
 
-import mainImg from '../../public/mainImg.png'
+import mainImg from '../../public/mainImg.png';
 
 export default function Home() {
   const arrMenuCards = [
@@ -101,24 +101,24 @@ export default function Home() {
       </div>
 
       <div className={style.containerCentre}>
-          <h2>Browse Our Menu</h2>
+        <h2>Browse Our Menu</h2>
 
-          <div className={style.menuCardsWrapper}>
-            {arrMenuCards.map((el, i) => (
-              <div className={style.menuCard} key={i}>
-                <Image className={style.iconMenuCard} alt={el.alt} src={el.iconCard}></Image>
+        <div className={style.menuCardsWrapper}>
+          {arrMenuCards.map((el, i) => (
+            <div className={style.menuCard} key={i}>
+              <Image className={style.iconMenuCard} alt={el.alt} src={el.iconCard}></Image>
 
-                <div className={style.descriptionMenuCard}>
-                  <h3>{el.title}</h3>
-                  <p>{el.description}</p>
-                </div>
-
-                <Link href={el.link}>
-                  <p className={style.linkToExploreMenu}>Explore Menu</p>
-                </Link>
+              <div className={style.descriptionMenuCard}>
+                <h3>{el.title}</h3>
+                <p>{el.description}</p>
               </div>
-            ))}
-          </div>
+
+              <Link href={el.link}>
+                <p className={style.linkToExploreMenu}>Explore Menu</p>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className={style.containerBottom}>
@@ -126,16 +126,16 @@ export default function Home() {
           <h2>We also offer unique services for your events</h2>
 
           <div className={style.eventsCardsWrapper}>
-          {arrEventCard.map((el, i) => (
-            <div className={style.eventCard} key={i}>
-              <Image className={style.imgEventCard} alt={el.alt} src={el.iconCard}></Image>
+            {arrEventCard.map((el, i) => (
+              <div className={style.eventCard} key={i}>
+                <Image className={style.imgEventCard} alt={el.alt} src={el.iconCard}></Image>
 
-              <div className={style.descriptionEventCard}>
-                <h3>{el.title}</h3>
-                <p>{el.description}</p>
+                <div className={style.descriptionEventCard}>
+                  <h3>{el.title}</h3>
+                  <p>{el.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
           </div>
         </div>
       </div>
