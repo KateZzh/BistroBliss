@@ -1,0 +1,73 @@
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+  padding: 77px 0 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 85px;
+
+  .infoTitle {
+    max-width: 557px;
+    text-align: center;
+
+    h1 {
+      color: #2c2f24;
+      font: 400 100px Playfair Display;
+      line-height: 96px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      color: #495460;
+      font: 400 18px DM Sans;
+      line-height: 28px;
+    }
+  }
+
+  .cardsMenuWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+    .card {
+      border-radius: 12px;
+      border: 1.5px solid #dbdfd0;
+      max-width: 306px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .img {
+        border-radius: 12px 12px 0 0;
+      }
+
+      .info {
+        padding: 30px 30px 34px 30px;
+        text-align: center;
+
+        .price {
+          color: #ad343e;
+          font: 700 24px DM Sans;
+          line-height: 30px;
+          letter-spacing: -0.72px;
+          padding-bottom: 15px;
+        }
+
+        .title {
+          color: #2c2f24;
+          font: 700 20px DM Sans;
+          line-height: 26px;
+          padding-bottom: 15px;
+        }
+
+        .description {
+          color: #414536;
+          font: 400 16px DM Sans;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
