@@ -10,26 +10,27 @@ export default function Id() {
   const [card, setCard] = useState({});
   const { id } = useParams();
 
-  const filteredCards = () => {
-    const findCard = arrCardsMenu.find((el) => el.id == id);
-    setCard(findCard);
-  };
-
   useEffect(() => {
-    filteredCards();
+    setCard(arrCardsMenu.find((el) => el.id == id));
   }, []);
-
-  console.log(card);
 
   return (
     <>
       <div className={style.container}>
-        <Image className={style.img} alt={card.alt} src={card.img}></Image>
+        <Image
+          className={style.img}
+          alt={card.alt}
+          src={card.imgForCard || card.imgForMenu}
+        ></Image>
 
         <div className={style.infoWrapper}>
           <h2>{card.title}</h2>
           <p className={style.description}>{card.description}</p>
-          <p className={style.price}>{card.price}</p>
+
+          <div className={style.priceWrapper}>
+            <p>Total:</p>
+            <p>{card.price}</p>
+          </div>
         </div>
       </div>
     </>

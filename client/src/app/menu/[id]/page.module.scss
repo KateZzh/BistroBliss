@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+  padding: 65px 0 118px;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+
+  .img {
+    border-radius: 12px;
+    width: 599px;
+    height: 566px;
+  }
+
+  .infoWrapper {
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+      color: #2c2f24;
+      font: 500 55px Playfair Display;
+      line-height: 60.5px;
+    }
+
+    .description {
+      color: #2c2f24;
+      font: 500 18px DM Sans;
+      line-height: 28px;
+    }
+
+    .priceWrapper {
+      display: flex;
+      gap: 5px;
+      p {
+        color: #414536;
+        font: 400 16px DM Sans;
+        line-height: 24px;
+      }
+    }
+  }
+}
