@@ -19,7 +19,7 @@
     margin: 0 auto;
     max-width: 1296px;
     padding: 207px 0 202px;
-
+    
     .wrapperInfo {
       max-width: 667px;
       display: flex;
@@ -80,7 +80,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 92px 0 120px;
+  padding: 92px 10px 120px;
   margin: 0 auto;
   max-width: 1296px;
   gap: 64px;
@@ -145,7 +145,7 @@
   .wrapper {
     margin: 0 auto;
     max-width: 1296px;
-    padding: 120px 0;
+    padding: 120px 10px;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -161,7 +161,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 15px;
+      gap: 14px;
 
       .eventCard {
         .imgEventCard {

@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 1296px;
-  padding: 77px 0 222px;
+  padding: 77px 10px 222px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: transform 500ms;
+
+      &:hover {
+        transform: translateY(-5px);
+        opacity: 90%;
+      }
 
       .img {
         border-radius: 12px 12px 0 0;
