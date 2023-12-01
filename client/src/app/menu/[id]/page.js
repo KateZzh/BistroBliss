@@ -17,11 +17,7 @@ export default function Id() {
   return (
     <>
       <div className={style.container}>
-        <Image
-          className={style.img}
-          alt={card.alt}
-          src={card.imgForCard || card.imgForMenu}
-        ></Image>
+        <Image className={style.img} alt={card.alt} src={card.imgForCard}></Image>
 
         <div className={style.infoWrapper}>
           <h2>{card.title}</h2>

@@ -7,6 +7,13 @@ import imgMenu6 from '../app/menu/assets/imgMenu6.png';
 import imgMenu7 from '../app/menu/assets/imgMenu7.png';
 import imgMenu8 from '../app/menu/assets/imgMenu8.png';
 import imgCard1 from '../app/menu/assets/imgCard1.png';
+import imgCard2 from '../app/menu/assets/imgCard2.png';
+import imgCard3 from '../app/menu/assets/imgCard3.png';
+import imgCard4 from '../app/menu/assets/imgCard4.png';
+import imgCard5 from '../app/menu/assets/imgCard5.png';
+import imgCard6 from '../app/menu/assets/imgCard6.png';
+import imgCard7 from '../app/menu/assets/imgCard7.png';
+import imgCard8 from '../app/menu/assets/imgCard8.png';
 
 export const arrCardsMenu = [
   {
@@ -21,6 +28,7 @@ export const arrCardsMenu = [
   {
     id: '2',
     imgForMenu: imgMenu2,
+    imgForCard: imgCard2,
     alt: 'imgHawaiianPizza',
     price: '$ 15.99',
     title: 'Hawaiian Pizza',
@@ -29,6 +37,7 @@ export const arrCardsMenu = [
   {
     id: '3',
     imgForMenu: imgMenu3,
+    imgForCard: imgCard3,
     alt: 'imgMartinezCocktail',
     price: '$ 7.25',
     title: 'Martinez Cocktail',
@@ -37,6 +46,7 @@ export const arrCardsMenu = [
   {
     id: '4',
     imgForMenu: imgMenu4,
+    imgForCard: imgCard4,
     alt: 'imgButterscotchCake',
     price: '$ 20.99',
     title: 'Butterscotch Cake',
@@ -45,6 +55,7 @@ export const arrCardsMenu = [
   {
     id: '5',
     imgForMenu: imgMenu5,
+    imgForCard: imgCard5,
     alt: 'imgMintLemonade',
     price: '$ 5.89',
     title: 'Mint Lemonade',
@@ -53,6 +64,7 @@ export const arrCardsMenu = [
   {
     id: '6',
     imgForMenu: imgMenu6,
+    imgForCard: imgCard6,
     alt: 'imgChocolateIcecream',
     price: '$ 18.05',
     title: 'Chocolate Icecream',
@@ -61,6 +73,7 @@ export const arrCardsMenu = [
   {
     id: '7',
     imgForMenu: imgMenu7,
+    imgForCard: imgCard7,
     alt: 'imgCheeseBurger',
     price: '$ 12.55',
     title: 'Cheese Burger',
@@ -69,6 +82,7 @@ export const arrCardsMenu = [
   {
     id: '8',
     imgForMenu: imgMenu8,
+    imgForCard: imgCard8,
     alt: 'imgClassicWaffles',
     price: '$ 12.99',
     title: 'Classic Waffles',
