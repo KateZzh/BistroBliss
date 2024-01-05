@@ -57,7 +57,7 @@
     align-items: center;
     max-width: 1293px;
 
-    .logoWrapper {
+    .logoWrapper a {
       display: flex;
       align-items: center;
       gap: 13px;
@@ -74,23 +74,6 @@
     nav {
       display: flex;
       gap: 8px;
-
-      .btnNav {
-        border-radius: 34px;
-        color: #2c2f24;
-        font: 500 16px DM Sans;
-        line-height: 24px;
-        text-align: center;
-        padding: 4px 0;
-        width: 77px;
-        height: 32px;
-        background-color: #dbdfd0;
-
-        &:hover {
-          transform: 0.5s;
-          opacity: 75%;
-        }
-      }
     }
 
     .btn {
@@ -104,10 +87,10 @@
       text-align: center;
       line-height: 24px;
       cursor: pointer;
+      transition: 0.5s;
 
       &:hover {
         background-color: #dbdfd0;
-        transition: 0.5s;
       }
     }
   }

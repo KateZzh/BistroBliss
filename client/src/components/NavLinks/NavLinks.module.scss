@@ -1,0 +1,20 @@
+.btnNav,
+.btnNavActive {
+  color: #2c2f24;
+  font: 500 16px DM Sans;
+  line-height: 24px;
+  text-align: center;
+  padding: 4px 0;
+  width: 77px;
+  height: 32px;
+
+  &:hover {
+    transform: 0.5s;
+    opacity: 80%;
+  }
+}
+
+.btnNavActive {
+  border-radius: 34px;
+  background: #dbdfd0;
+}

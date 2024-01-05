@@ -19,7 +19,7 @@
     margin: 0 auto;
     max-width: 1296px;
     padding: 207px 0 202px;
-    
+
     .wrapperInfo {
       max-width: 667px;
       display: flex;
@@ -53,9 +53,9 @@
           line-height: 24px;
           padding: 20px 0;
           cursor: pointer;
+          transition: 0.5s;
 
           &:hover {
-            transform: 0.5s;
             opacity: 80%;
           }
         }
@@ -128,9 +128,9 @@
         color: #ad343e;
         font: 700 16px DM Sans;
         line-height: 24px;
+        transition: 0.5s;
 
         &:hover {
-          transition: 0.5s;
           opacity: 70%;
         }
       }

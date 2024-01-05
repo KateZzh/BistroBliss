@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import style from './Header.module.scss';
 import Link from 'next/link';
+import NavLinks from '../NavLinks/NavLinks';
 
 import phoneIcon from './assets/phoneIcon.svg';
 import mailIcon from './assets/mailIcon.svg';
@@ -16,12 +17,6 @@ export default function Header() {
     { icon: facebookIcon, alt: 'facebookIcon' },
     { icon: instagramIcon, alt: 'instagramIcon' },
     { icon: githubIcon, alt: 'githubIcon' },
-  ];
-
-  const arrNav = [
-    { icon: 'Home', linkPage: '/' },
-    { icon: 'About', linkPage: '/about' },
-    { icon: 'Menu', linkPage: '/menu' },
   ];
 
   return (
@@ -42,8 +37,8 @@ export default function Header() {
 
           <div className={style.socialLogos}>
             {arrIcons.map((el, i) => (
-              <Link href='#'>
-                <Image className={style.icon} src={el.icon} key={i} alt={el.alt}></Image>
+              <Link href='#' key={i}>
+                <Image className={style.icon} src={el.icon} alt={el.alt}></Image>
               </Link>
             ))}
           </div>
@@ -53,19 +48,13 @@ export default function Header() {
       <div className={style.containerBottom}>
         <div className={style.wrapperBottom}>
           <div className={style.logoWrapper}>
-            <Image src={logoImg} alt='logoImg'></Image>
-            <h2 className={style.siteTitle}>Bistro Bliss</h2>
+            <Link href={'/'}>
+              <Image src={logoImg} alt='logoImg'></Image>
+              <h2 className={style.siteTitle}>Bistro Bliss</h2>
+            </Link>
           </div>
 
-          <nav>
-            {arrNav.map((el, i) => (
-              <Link href={el.linkPage}>
-                <div className={style.btnNav} key={i}>
-                  {el.icon}
-                </div>
-              </Link>
-            ))}
-          </nav>
+          <NavLinks />
 
           <div className={style.btn}>Book A Table</div>
         </div>
